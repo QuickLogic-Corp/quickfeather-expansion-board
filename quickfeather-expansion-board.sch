@@ -1,0 +1,454 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "AVS Cradle"
+Date "2020-09-10"
+Rev "v1.1"
+Comp "QuickLogic Corp."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 1500 2100
+NoConn ~ 1500 2200
+NoConn ~ 1500 2300
+NoConn ~ 1500 2400
+NoConn ~ 1500 2500
+NoConn ~ 1500 2600
+NoConn ~ 2300 1900
+NoConn ~ 2300 2000
+NoConn ~ 2300 2100
+NoConn ~ 2300 2700
+Wire Wire Line
+	2750 2600 2300 2600
+Text Label 2750 2600 2    50   ~ 0
+ES3P3V
+Text Label 2750 2400 2    50   ~ 0
+I2S_WSEL
+Text Label 2750 2300 2    50   ~ 0
+I2S_DIN
+Text Label 2750 2200 2    50   ~ 0
+I2S_CLK
+Wire Wire Line
+	2300 2500 2400 2500
+Wire Wire Line
+	2400 2500 2400 2900
+Text Notes 1250 2950 0    50   ~ 0
+I2S Audio DAC - UDA1334
+Wire Wire Line
+	2750 2400 2300 2400
+Wire Wire Line
+	2750 2300 2300 2300
+Wire Wire Line
+	2750 2200 2300 2200
+NoConn ~ 6200 3050
+NoConn ~ 6200 2950
+NoConn ~ 6200 1350
+NoConn ~ 6200 1450
+NoConn ~ 6200 1550
+NoConn ~ 6200 1650
+NoConn ~ 5400 1350
+NoConn ~ 5400 1450
+NoConn ~ 5400 1550
+NoConn ~ 5400 1850
+NoConn ~ 5400 2050
+NoConn ~ 5400 2150
+NoConn ~ 5400 2750
+NoConn ~ 5400 2850
+Wire Wire Line
+	6950 1750 6200 1750
+Text Label 6950 1750 2    50   ~ 0
+uSD_CSn
+Wire Wire Line
+	6950 1950 6200 1950
+Text Label 6950 1950 2    50   ~ 0
+uSD_D2
+Wire Wire Line
+	6950 2050 6200 2050
+Text Label 6950 2050 2    50   ~ 0
+uSD_CLK
+Wire Wire Line
+	6950 2250 6200 2250
+Text Label 6950 2250 2    50   ~ 0
+I2S_DIN
+Wire Wire Line
+	6950 2350 6200 2350
+Text Label 6950 2350 2    50   ~ 0
+I2S_WSEL
+Wire Wire Line
+	6950 3150 6200 3150
+Text Label 6950 3150 2    50   ~ 0
+ES3P3V
+Wire Wire Line
+	6200 1850 6450 1850
+Wire Wire Line
+	6450 1850 6450 3450
+Text Label 4700 1650 0    50   ~ 0
+uSD_MOSI
+Text Label 4700 1750 0    50   ~ 0
+uSD_MISO
+Text Label 4700 1950 0    50   ~ 0
+uSD_D1
+Text Label 4700 2250 0    50   ~ 0
+I2S_CLK
+Wire Wire Line
+	5200 3150 5200 3450
+Wire Wire Line
+	5200 2550 5200 3150
+Connection ~ 5200 3150
+Wire Wire Line
+	2950 4900 2200 4900
+Text Label 2950 4900 2    50   ~ 0
+ES3P3V
+Wire Wire Line
+	1700 4900 950  4900
+Text Label 950  4900 0    50   ~ 0
+ES3P3V
+Wire Wire Line
+	1700 4400 950  4400
+Text Label 950  4400 0    50   ~ 0
+uSD_CSn
+Wire Wire Line
+	1700 4500 950  4500
+Text Label 950  4500 0    50   ~ 0
+uSD_MOSI
+Wire Wire Line
+	1700 4600 950  4600
+Text Label 950  4600 0    50   ~ 0
+uSD_MISO
+Wire Wire Line
+	1700 4700 950  4700
+Text Label 950  4700 0    50   ~ 0
+uSD_CLK
+Wire Wire Line
+	2950 4400 2200 4400
+Text Label 2950 4400 2    50   ~ 0
+uSD_D1
+Wire Wire Line
+	2950 4500 2200 4500
+Text Label 2950 4500 2    50   ~ 0
+uSD_D2
+NoConn ~ 2200 4600
+NoConn ~ 2200 4700
+Wire Wire Line
+	2200 4800 2400 4800
+Wire Wire Line
+	2400 4800 2400 5050
+Wire Wire Line
+	1700 4800 1600 4800
+Wire Wire Line
+	1600 4800 1600 5050
+Wire Wire Line
+	1600 5050 2400 5050
+Connection ~ 2400 5050
+Wire Wire Line
+	2400 5050 2400 5100
+Text Notes 1350 4100 0    50   ~ 0
+Espressif - uSD Connection
+Wire Wire Line
+	9850 3250 10400 3250
+Text Label 9850 3250 0    50   ~ 0
+ES3P3V
+Wire Wire Line
+	10400 3050 10250 3050
+Wire Wire Line
+	10250 3050 10250 3450
+NoConn ~ 6200 2850
+NoConn ~ 10400 3150
+$Comp
+L quicklogicBoardsSympbols:1x4_Conn J7
+U 1 1 5F3FBB0E
+P 10600 3650
+F 0 "J7" H 10550 4350 50  0000 L CNN
+F 1 "1x4_Conn" V 10700 3900 50  0000 L CNN
+F 2 "1x4_Conn" H 10600 4350 50  0001 C CNN
+F 3 "" H 10600 4350 50  0001 C CNN
+	1    10600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F40217D
+P 10250 3450
+F 0 "#PWR0104" H 10250 3200 50  0001 C CNN
+F 1 "GND" H 10255 3277 50  0000 C CNN
+F 2 "" H 10250 3450 50  0001 C CNN
+F 3 "" H 10250 3450 50  0001 C CNN
+	1    10250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L quicklogicBoardsSympbols:2x6_Conn J6
+U 1 1 5F4141EC
+P 1900 5000
+F 0 "J6" H 1950 5825 50  0000 C CNN
+F 1 "2x6_Conn" H 1950 5734 50  0000 C CNN
+F 2 "2x6_Conn" H 2000 5700 50  0001 C CNN
+F 3 "" H 2000 5700 50  0001 C CNN
+	1    1900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5F41820D
+P 2400 5100
+F 0 "#PWR0105" H 2400 4850 50  0001 C CNN
+F 1 "GND" H 2405 4927 50  0000 C CNN
+F 2 "" H 2400 5100 50  0001 C CNN
+F 3 "" H 2400 5100 50  0001 C CNN
+	1    2400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L quicklogicBoardsSympbols:UDA1334 J1
+U 1 1 5F4501B2
+P 1900 2900
+F 0 "J1" H 1900 4165 50  0000 C CNN
+F 1 "UDA1334" H 1900 4074 50  0000 C CNN
+F 2 "uda1334" H 1900 2800 50  0001 C CNN
+F 3 "" H 1900 2800 50  0001 C CNN
+	1    1900 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5F465BF1
+P 2400 2900
+F 0 "#PWR0107" H 2400 2650 50  0001 C CNN
+F 1 "GND" H 2405 2727 50  0000 C CNN
+F 2 "" H 2400 2900 50  0001 C CNN
+F 3 "" H 2400 2900 50  0001 C CNN
+	1    2400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F5076E5
+P 5200 3450
+F 0 "#PWR0108" H 5200 3200 50  0001 C CNN
+F 1 "GND" H 5205 3277 50  0000 C CNN
+F 2 "" H 5200 3450 50  0001 C CNN
+F 3 "" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5F50D81A
+P 6450 3450
+F 0 "#PWR0109" H 6450 3200 50  0001 C CNN
+F 1 "GND" H 6455 3277 50  0000 C CNN
+F 2 "" H 6450 3450 50  0001 C CNN
+F 3 "" H 6450 3450 50  0001 C CNN
+	1    6450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3150 5200 3150
+Wire Wire Line
+	5400 2550 5200 2550
+Wire Wire Line
+	4700 2250 5400 2250
+Wire Wire Line
+	4700 1950 5400 1950
+Wire Wire Line
+	4700 1750 5400 1750
+Wire Wire Line
+	4700 1650 5400 1650
+$Comp
+L quicklogicBoardsSympbols:DEVKITC-VE1 J5
+U 1 1 5F6306DF
+P 5800 3350
+F 0 "J5" H 5800 5615 50  0000 C CNN
+F 1 "DEVKITC-VE1" H 5800 5524 50  0000 C CNN
+F 2 "devkitc" H 5800 5550 50  0001 C CNN
+F 3 "" H 5800 5550 50  0001 C CNN
+	1    5800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F64A3CF
+P 3300 7000
+F 0 "H2" H 3400 7046 50  0000 L CNN
+F 1 "MountingHole" H 3400 6955 50  0000 L CNN
+F 2 "MPAD" H 3300 7000 50  0001 C CNN
+F 3 "~" H 3300 7000 50  0001 C CNN
+	1    3300 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F64BD46
+P 2450 7000
+F 0 "H1" H 2550 7046 50  0000 L CNN
+F 1 "MountingHole" H 2550 6955 50  0000 L CNN
+F 2 "MPAD" H 2450 7000 50  0001 C CNN
+F 3 "~" H 2450 7000 50  0001 C CNN
+	1    2450 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F658172
+P 4150 7000
+F 0 "H3" H 4250 7046 50  0000 L CNN
+F 1 "MountingHole" H 4250 6955 50  0000 L CNN
+F 2 "MPAD" H 4150 7000 50  0001 C CNN
+F 3 "~" H 4150 7000 50  0001 C CNN
+	1    4150 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F65E4C9
+P 2850 7250
+F 0 "H4" H 2950 7296 50  0000 L CNN
+F 1 "MountingHole" H 2950 7205 50  0000 L CNN
+F 2 "MPAD" H 2850 7250 50  0001 C CNN
+F 3 "~" H 2850 7250 50  0001 C CNN
+	1    2850 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L quicklogicBoardsSympbols:ql_logo N1
+U 1 1 5F6648FF
+P 6150 7150
+F 0 "N1" H 6344 7153 50  0000 L CNN
+F 1 "ql_logo" H 6344 7062 50  0000 L CNN
+F 2 "Ql_logo" H 6170 6910 50  0001 C CNN
+F 3 "" H 6150 7150 50  0001 C CNN
+	1    6150 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L quicklogicBoardsSympbols:1x2_Conn J11
+U 1 1 5F4A7062
+P 10550 4550
+F 0 "J11" H 10500 5250 50  0000 L CNN
+F 1 "1x2_Conn" V 10700 4800 50  0000 L CNN
+F 2 "1x2_Conn" H 10550 5250 50  0001 C CNN
+F 3 "" H 10550 5250 50  0001 C CNN
+	1    10550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 4050 10350 4050
+Text Label 9800 4050 0    50   ~ 0
+I2S_CLK
+$Comp
+L quicklogicBoardsSympbols:1x2_Conn J13
+U 1 1 5F4D3292
+P 10550 5950
+F 0 "J13" H 10500 6650 50  0000 L CNN
+F 1 "1x2_Conn" V 10700 6200 50  0000 L CNN
+F 2 "1x2_Conn" H 10550 6650 50  0001 C CNN
+F 3 "" H 10550 6650 50  0001 C CNN
+	1    10550 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5450 10350 5450
+Text Label 9800 5450 0    50   ~ 0
+I2S_WSEL
+$Comp
+L quicklogicBoardsSympbols:1x2_Conn J12
+U 1 1 5F4DB425
+P 10550 5250
+F 0 "J12" H 10500 5950 50  0000 L CNN
+F 1 "1x2_Conn" V 10700 5500 50  0000 L CNN
+F 2 "1x2_Conn" H 10550 5950 50  0001 C CNN
+F 3 "" H 10550 5950 50  0001 C CNN
+	1    10550 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 4750 10350 4750
+Text Label 9800 4750 0    50   ~ 0
+I2S_DIN
+$Comp
+L quicklogicBoardsSympbols:debug_area J15
+U 1 1 5F4E9628
+P 10100 2650
+F 0 "J15" H 10730 3146 50  0000 L CNN
+F 1 "debug_area" H 10730 3055 50  0000 L CNN
+F 2 "debug_area" H 10300 3550 50  0001 C CNN
+F 3 "" H 10300 3550 50  0001 C CNN
+	1    10100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5F5059C5
+P 3800 7250
+F 0 "H5" H 3900 7296 50  0000 L CNN
+F 1 "MountingHole" H 3900 7205 50  0000 L CNN
+F 2 "MPAD" H 3800 7250 50  0001 C CNN
+F 3 "~" H 3800 7250 50  0001 C CNN
+	1    3800 7250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6200 2650
+Text GLabel 9800 4150 0    50   Input ~ 0
+S3_I2S_CLK
+Text GLabel 9800 4850 0    50   Input ~ 0
+S3_I2S_DI
+Text GLabel 9800 5550 0    50   Input ~ 0
+S3_I2S_LR
+Wire Wire Line
+	10350 4150 9800 4150
+Wire Wire Line
+	10350 4850 9800 4850
+Wire Wire Line
+	10350 5550 9800 5550
+Text GLabel 4700 3050 0    50   Input ~ 0
+D2H_INTR
+Text GLabel 4700 2950 0    50   Input ~ 0
+SPIs_CSn
+Text GLabel 4700 2650 0    50   Input ~ 0
+SPIs_CLK
+Text GLabel 4700 2450 0    50   Input ~ 0
+SPIs_MOSI
+Text GLabel 4700 2350 0    50   Input ~ 0
+SPIs_MISO
+Text GLabel 6950 2150 2    50   Input ~ 0
+H2D_INTR
+Text GLabel 6950 2450 2    50   Input ~ 0
+H2D_ACK
+Text GLabel 6950 2750 2    50   Input ~ 0
+D2H_ACK
+Text GLabel 6950 2550 2    50   Input ~ 0
+SYS_RSTn
+Wire Wire Line
+	6950 2150 6200 2150
+Wire Wire Line
+	6950 2450 6200 2450
+Wire Wire Line
+	6950 2550 6200 2550
+Wire Wire Line
+	6950 2750 6200 2750
+Wire Wire Line
+	4700 2350 5400 2350
+Wire Wire Line
+	4700 2650 5400 2650
+Wire Wire Line
+	4700 2950 5400 2950
+Wire Wire Line
+	4700 3050 5400 3050
+Wire Wire Line
+	5400 2450 4700 2450
+Text GLabel 9850 3350 0    50   Input ~ 0
+QF3P3V
+Wire Wire Line
+	10400 3350 9850 3350
+$Sheet
+S 9350 850  600  550 
+U 5F5B8109
+F0 "quickfeather" 50
+F1 "quickfeather-expansion-board-page2.sch" 50
+$EndSheet
+$EndSCHEMATC
